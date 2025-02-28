@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+</head>
+<body>
+    <h1>Welcome to Group Chat</h1>
+    <div id="app">
+        <div class="app-header">Group Chat</div>
+        
+        <div class="username-container">
+            <span id="current-username"></span>
+            <input type="text" id="username" placeholder="New username">
+            <button id="update-username">Update Name</button>
+        </div>
+
+        <div>
+            <div class="chat-messages" id="chat-messages">
+                <div id="chat"></div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="message" placeholder="Type your message here...">
+                <button id="send">Send</button>    
+            </div>   
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
