@@ -81,7 +81,7 @@ body {
 
 /* ===== Chat Messages Section ===== */
 .chat-messages {
-    height: 500px;
+    height: 60vh;
     overflow-y: auto;
     background-color: var(--secondary-color);
     padding: 10px;
