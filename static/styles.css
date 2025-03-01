@@ -46,23 +46,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
     margin: 10px 0;
 }
 
-#current-username {
-    font-weight: bold;
-    color: var(--primary-dark);
-    margin-right: 10px;
-}
-
 #username {
+    flex: 1;
     padding: 10px;
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     font-size: 14px;
     width: 100%;
-    max-width: 200px;
 }
 
 #update-username {
@@ -73,6 +69,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 #update-username:hover {
@@ -179,6 +176,7 @@ body {
     border-radius: 10px;
     margin: 10px auto;
 }
+
 /* ===== Responsive Design Fixes ===== */
 @media screen and (max-width: 768px) {
     #app {
