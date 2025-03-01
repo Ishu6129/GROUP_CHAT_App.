@@ -179,11 +179,12 @@ body {
     border-radius: 10px;
     margin: 10px auto;
 }
-
-/* ===== Responsive Design ===== */
+/* ===== Responsive Design Fixes ===== */
 @media screen and (max-width: 768px) {
     #app {
-        width: 95%;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         padding: 15px;
     }
 
@@ -193,41 +194,48 @@ body {
     }
 
     .username-container {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
     #username {
-        width: 100%;
-        max-width: none;
+        width: auto;
+        max-width: 150px;
     }
 
     .chat-messages {
-        height: 250px;
-        padding: 8px;
+        height: 400px;
+        max-height: 60vh;
+        padding: 10px;
+    }
+
+    .message {
+        max-width: 80%;
     }
 
     .message-content {
-        max-width: 90%;
+        max-width: 80%;
+        padding: 10px;
         font-size: 14px;
-        padding: 8px;
     }
 
     .input-container {
-        display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 10px;
         width: 100%;
-        gap: 5px;
     }
 
     #message {
-        width: 80%;
+        flex: 1;
+        width: 100%;
+        padding: 10px;
     }
 
     #send {
-        width: auto;
-        padding: 10px;
+        padding: 10px 15px;
         font-size: 14px;
+        white-space: nowrap;
     }
 }
