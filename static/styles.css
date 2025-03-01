@@ -1,7 +1,7 @@
 /* ===== Root Variables ===== */
 :root {
     --primary-color: #4a90e2;
-    --primary-light: #5da8ff;
+    --primary-light: #1176e9;
     --primary-dark: #3a7cbd;
     --secondary-color: #e8f1f8;
     --text-color: #2c3e50;
@@ -23,6 +23,7 @@ body {
 /* ===== Main App Container ===== */
 #app {
     max-width: 600px;
+    height: 700px;
     margin: 20px auto;
     background-color: white;
     border-radius: 15px;
@@ -80,7 +81,7 @@ body {
 
 /* ===== Chat Messages Section ===== */
 .chat-messages {
-    height: 300px;
+    height: 500px;
     overflow-y: auto;
     background-color: var(--secondary-color);
     padding: 10px;
@@ -122,7 +123,7 @@ body {
 }
 
 .sent .message-content {
-    background-color: #72b2f7;
+    background-color: #74a7de;
     color: white;
     align-self: flex-end;
 }
