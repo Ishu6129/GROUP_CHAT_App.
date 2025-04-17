@@ -17,7 +17,7 @@ socket.on('user_connected', data => {
     addMessage(`${data.username} has joined the chat`, 'system');
 });
 
-socket.on('disconnect', data => {
+socket.on('user_left', data => {
     addMessage(`${data.username} has left the chat`, 'system');
 });
 
